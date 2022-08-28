@@ -8,7 +8,8 @@
 .btn-secondary:hover,
 .btn-secondary:focus {
   color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
+  text-shadow: none;
+  /* Prevent inheritance from `body` */
 }
 
 
@@ -40,7 +41,7 @@ body {
   border-bottom-color: rgba(255, 255, 255, .25);
 }
 
-.nav-masthead .nav-link + .nav-link {
+.nav-masthead .nav-link+.nav-link {
   margin-left: 1rem;
 }
 
@@ -50,20 +51,21 @@ body {
 }
 
 
-#header{
-    position: fixed;
-    width: 100%;
-    height: 70px;
-    top: 0;
+#header {
+  z-index: 9;
+  position: fixed;
+  width: 100%;
+  height: 70px;
+  top: 0;
 }
 
 /*====== SECTION HOME ======*/
-.px-3{
-    margin-top: 200px;
+.px-3 {
+  margin-top: 200px;
 }
 
-#home{
-    height: 100vh;
+#home {
+  height: 100vh;
 }
 
 /*====== SECTION HOME ======*/
@@ -72,9 +74,102 @@ body {
 
 /* SECTION ABOUT */
 
-#about{
-    width: 100%;
-    height: 100vh;
+#about {
+  width: 100%;
+  height: 100vh;
 }
 
 
+
+
+.carousel-indicators [data-bs-target] {
+  height: 8px;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+#divider-2 {
+  margin-top: 120px;
+}
+
+@media (max-width: 550px) {
+  #divider-2 {
+    margin-top: 320px;
+  }
+}
+
+/* SECTION ABOUT */
+
+/* SECTION MEMBERS */
+
+#members {
+  margin-top: 200px;
+  width: 100%;
+  height: 60vh;
+}
+
+#members .image-box {
+  overflow: hidden;
+  border: 1px solid black;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  margin-top: 10px;
+}
+
+@media (min-width: 768px) {
+  .row-cols-md-2>* {
+    flex: 0 0 auto;
+    width: 20%;
+  }
+
+  #row-content {
+    width: 100%;
+  }
+
+  #members .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+}
+#members .col{
+  display: flex;
+  justify-content: center;
+  width: 190px;
+}
+
+@media (max-width: 768px) {
+
+  #members {
+    margin-top: 200px;
+    width: 100%;
+    height: 130vh;
+  }
+
+  #members .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+  }
+  #row-content {
+    width: 100%;
+    margin-left: -5px;
+  }
+
+}
+
+
+
+#pagination {
+  margin-top: 50px;
+}
+
+
+/* SECTION MEMBERS */
