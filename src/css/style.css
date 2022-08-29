@@ -68,7 +68,66 @@ body {
 #home {
   height: 100vh;
 }
+.container-report{
+    overflow: hidden;
+    width: 5%;
+    height: 80vh;
+    margin-left: -2em;
+    margin-top: 24em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 38px;
+    position: fixed;
+    z-index: 999;
+}
+.container-report button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-report img{
+  width: 15px;
+  height: 15px;
+}
 
+.fade-content{
+  z-index: 99;
+  position: absolute;
+  display: none;
+  width: 100%;
+  height: 400vh;
+  background-color: rgba(0, 0, 0, 0.349);
+}
+.modal-content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+.modal-area{
+  position: absolute;
+  width: 70%;
+  height: 500px;
+  background-color: #fff;
+  border-radius: 8px;
+}
+.modal-area h1{
+  color: rgb(29, 28, 26);
+}
+.modal-area i{
+  color: #333;
+}
+@media (max-width: 540px) {
+  .modal-area{
+    position: absolute;
+    width: 70%;
+    height: 600px;
+    background-color: #fff;
+    border-radius: 8px;
+  }
+}
 /*====== SECTION HOME ======*/
 
 
