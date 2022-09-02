@@ -83,17 +83,23 @@
 
 <body>
 
+    <div class="login-container">
+        <a href="src/pages/login.html">
+            <button class="btn btn-primary" type="button">Login</button>
+        </a>
+        
+    </div>
+
     <div class="d-flex text-center text-bg-dark" id="header">
         <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
             <header class="mb-auto">
                 <div>
-
                     <img class="float-md-start mb-0" src="src/images/Logo2.webp" alt="" width="50px" height="70px">
                     <!-- <h3 class="float-md-start mb-0">Cover</h3> -->
                     <nav id="menu" class="nav nav-masthead justify-content-center float-md-end">
-                        <a class="nav-link fw-bold py-1 px-0 active" aria-current="page" href="#home">Início</a>
+                        <a class="nav-link fw-bold py-1 px-0 " aria-current="page" href="#home">Início</a>
                         <a class="nav-link fw-bold py-1 px-0" href="#members">Membros</a>
-                        <a class="nav-link fw-bold py-1 px-0" href="#">Contato</a>
+                        <a class="nav-link fw-bold py-1 px-0"  href="">Contato</a>
                     </nav>
                 </div>
             </header>
@@ -117,26 +123,26 @@
                     <h1>Bug Report</h1>
                     <i>Devido ao desenvolvimento contínuo do site, alguns problemas podem atrapalhar a experiência do
                         usuário<br>Se você identificou algum problema, fique a vontade para reportar</i>
-
+                <form action="" method="post">
                     <div class="mb-3">
                         <label for="exampleFormControlInput1" class="form-label"> <i>Email</i></label>
-                        <input type="email" class="form-control" id="exampleFormControlInput1"
+                        <input type="email" name="email-user" class="form-control" id="exampleFormControlInput1"
                             placeholder="name@email.com">
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlTextarea1" class="form-label"> <i>Descreva o problema</i></label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <textarea class="form-control" name="text-user" id="exampleFormControlTextarea1" rows="3"></textarea>
                     </div>
 
                     <div class="mb-3">
                         <label for="formFileMultiple" class="form-label"><i>Enviar imagem ou vídeo do problema</i></label>
-                        <input class="form-control" type="file" id="formFileMultiple" multiple>
+                        <input class="form-control" type="file" name="files-user" id="formFileMultiple" multiple>
                     </div>
 
-                    <button type="button" class="btn btn-primary btn-lg" id="reportButton">Reportar</button>
+                    <button type="submit" value="Submit" class="btn btn-primary btn-lg" id="reportButton">Reportar</button>
                     <button type="button" class="btn btn-secondary btn-lg" id="backButton" onclick="closeReport()">
                         <span>Voltar</span> </button>
-
+                </form>
                 </div>
             </div>
         </div>
@@ -154,14 +160,12 @@
                     <a href="#about" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Conheça</a>
                 </p>
             </main>
-
-            <footer class="mt-auto text-white-50">
-                <p>desenvolvido<a href="" class="text-white"></a> por <a href="https://github.com/Rafazg"
-                        class="text-white">&copy; RafaZG</a>.</p>
-
+            <footer>
+                <p class="mt-5 mb-3 text-muted">&copy; Musicalizando 2022</p>
             </footer>
         </div>
 
+        
 
     </section>
 
