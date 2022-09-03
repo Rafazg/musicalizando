@@ -174,7 +174,7 @@
     <section id="about">
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
-                <div class="col-10 col-sm-8 col-lg-6">
+                <div class="col-10 col-sm-8 col-lg-6" id="img-container">
                     <img src="src/images/ilustration.webp" class="d-block mx-lg-auto img-fluid" alt="">
                 </div>
                 <div class="col-lg-6">
@@ -200,14 +200,12 @@
 
                             </div>
                             <div class="carousel-item" data-bs-interval="5000">
-                                <h1 class="display-5 fw-bold lh-1 mb-3">Objetivo do Projeto</h1>
-                                <p class="lead">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium,
-                                    pariatur praesentium? Obcaecati neque facere mollitia vitae doloremque ea odit
-                                    laudantium, sint eius consectetur optio! Incidunt eveniet adipisci similique
-                                    excepturi illo?</p>
+                                <h1 class="display-5 fw-bold lh-1 mb-3">Nosso Objetivo</h1>
+                                <p class="lead">Estimular a criatividade e o senso colaborativo visando o <strong>desenvolvimento social</strong> de pessoas com problemas psicológicos, traumas e dificuldades em se comunicar, 
+                                    através da música onde podem exercitar seus conhecimentos técnicos e téoricos não só sobre a música, mas também sobre filosofia de vida e o porquê das coisas.</p>
                             </div>
-                            <div class="carousel-item" data-bs-interval="5000">
-                                <h1 class="display-5 fw-bold lh-1 mb-3">Apoie Seguindo</h1>
+                            <div class="carousel-item" id="item1" data-bs-interval="5000">
+                                <h1 class="display-5 fw-bold lh-1 mb-3">Onde nós encontrar?</h1>
                                 <p class="lead">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque commodi
                                     qui expedita illum. Odit et cumque molestiae facilis sequi alias unde est
                                     repellendus esse nesciunt, nisi corrupti quia, maiores sapiente?</p>
@@ -235,63 +233,66 @@
         <div class="container d-flex justify-content-center">
             <H1>MEMBROS</H1>
         </div>
-        <div class="row row-cols-2 row-cols-md-2 g-4 d-flex justify-content-center" id="row-content">
-            <div class="col">
-                <div class="card">
-                    <div class="image-box">
 
+        <div class="container-members">
+                <div class="row row-cols-2 row-cols-md-2 g-4 d-flex justify-content-center" id="row-content">
+                    <div class="col">
+                        <div class="card">
+                            <div class="image-box">
+        
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Membro</h5>
+        
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Membro</h5>
-
+                    <div class="col">
+                        <div class="card">
+                            <div class="image-box">
+        
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Membro</h5>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="image-box">
+        
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">Membro</h5>
+        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <div class="image-box">
+        
+                            </div>
+        
+                            <div class="card-body">
+                                <h5 class="card-title">Membro</h5>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="image-box">
-
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Membro</h5>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="image-box">
-
-                    </div>
-                    <div class="card-body">
-                        <h5 class="card-title">Membro</h5>
-
-                    </div>
-                </div>
-            </div>
-            <div class="col">
-                <div class="card">
-                    <div class="image-box">
-
-                    </div>
-
-                    <div class="card-body">
-                        <h5 class="card-title">Membro</h5>
-                    </div>
-                </div>
-            </div>
         </div>
+
 
         <nav aria-label="Page navigation example">
             <ul class="pagination justify-content-center" id="pagination">
                 <li class="page-item disabled">
                     <a class="page-link">Previous</a>
                 </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item"><a class="page-link" href="#">2</a></li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item"><a class="page-link" id="item">1</a></li>
+                <li class="page-item"><a class="page-link" id="nextItem">2</a></li>
                 <li class="page-item">
-                    <a class="page-link" href="#">Next</a>
+                    <a class="page-link">Next</a>
                 </li>
             </ul>
         </nav>
@@ -303,7 +304,7 @@
 
 
 
-
+    <script src="src/javascript/app.js"></script>
     <script src="src/javascript/reportModal.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
